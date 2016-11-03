@@ -16,29 +16,17 @@ class IpsumController extends Controller
 
     public function post(Request $request) 
     {   
-        $file = "/home/lu/code/ipsum/app/Http/Controllers/ipsum.txt"; 
-        $paragraphs = array(); 
-        $filep = fopen($file, 'r') ; 
-        while(!feof($filep)) { 
-            $line = fgets($filep); 
-            if ( strlen($line) < 10 ) { 
-                $foo = "bar"; 
-            } else { 
-                $paragraphs[] = $line; 
-            } 
-        } 
- 
         $contents = Storage::disk('local')->get('ipsum.txt'); 
 
         $paragraphs = explode("\n\n", $contents); 
         
-        $retval = ""; 
+        $retval = array() ; 
 
         for ($i=0; $i<$request['number']; $i++) { 
-            $retval = $retval . $paragraphs[$i] . "<br><br>"; 
+            $retval[$i]= $paragraphs[$i]; 
         } 
 
-        echo  $retval; 
+        $request["paragraphs"]=$retval; 
 
         return view('ipsum.post')->withRequest($request); 
     } 
