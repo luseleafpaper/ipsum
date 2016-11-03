@@ -3,6 +3,7 @@
 namespace Ipsum\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Webcraft\Random\RandomFacade;
 
 class UsergenController extends Controller
 {
@@ -15,6 +16,8 @@ class UsergenController extends Controller
 
     public function post(Request $request)
     {
+        $int = RandomFacade::generateInt(5, 15); 
+        $request["int"]=$int; 
         return view('usergen.post')->withRequest($request);
     }
 
