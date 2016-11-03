@@ -15,6 +15,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/ipsum', 'IpsumController@getIpsumForm')->name('ipsum.index'); 
-Route::post('/ipsum', 'IpsumController@postIpsumForm')->name('ipsum.show'); 
+Route::get('/ipsum', 'IpsumController@get')->name('ipsum.get'); 
+Route::post('/ipsum', 'IpsumController@post')->name('ipsum.post'); 
+
+Route::get('/usergen', 'UsergenController@get')->name('usergen.get'); 
+Route::post('/usergen', 'UsergenController@post')->name('usergen.post'); 
 

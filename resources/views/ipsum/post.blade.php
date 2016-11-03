@@ -5,5 +5,5 @@
 @stop 
 
 @section('content') 
-    <h1>You requested {{ $request['paragraphs'] }} paragraphs!</h1>
+    <h1>You requested {{ $request['number'] }} paragraphs!</h1>
 @endsection

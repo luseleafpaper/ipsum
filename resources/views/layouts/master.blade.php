@@ -18,7 +18,7 @@
     <nav>
         <ul>
             <li><a href='/ipsum'>Lorem Ipsum Generator</a></li>
-            <li><a href='/users'>User Generator</a></li>
+            <li><a href='/usergen'>User Generator</a></li>
         </ul>
     </nav>
 

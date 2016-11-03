@@ -11,7 +11,7 @@
         {{ csrf_field() }}
 
         How many paragraphs do you want? <br> 
-        <input type='number' name='paragraphs' value='3'>
+        <input type='number' name='number' value='3'>
         <br> 
         <input type='submit' value='Generate!'> 
 
