@@ -6,7 +6,7 @@
 
 @section('content') 
     <h1>Generate some random users!</h1>
-    <form method='POST' action='/ipsum'>
+    <form method='POST' action='/usergen'>
 
         {{ csrf_field() }}
 
