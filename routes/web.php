@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/ipsum', 'IpsumController@getIpsumForm')->name('ipsum.index'); 
+Route::post('/ipsum', 'IpsumController@postIpsumForm')->name('ipsum.show'); 
+
