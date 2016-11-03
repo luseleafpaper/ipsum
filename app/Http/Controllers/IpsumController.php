@@ -3,6 +3,7 @@ namespace Ipsum\Http\Controllers;
 use Illuminate\Http\Request;
 use Ipsum\Http\Requests;
 use Ipsum\Http\Controllers\Controller;
+use Storage;
 
 class IpsumController extends Controller
 {
@@ -27,6 +28,10 @@ class IpsumController extends Controller
             } 
         } 
  
+        $contents = Storage::disk('local')->get('ipsum.txt'); 
+
+        $paragraphs = explode("\n\n", $contents); 
+        
         $retval = ""; 
 
         for ($i=0; $i<$request['number']; $i++) { 
