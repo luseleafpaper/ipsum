@@ -18,6 +18,13 @@ class UsergenController extends Controller
 
     public function post(Request $request)
     {
+
+        // Validate the user's form items 
+        $this->validate($request, [
+            "number" => 'required|integer|between:1,100',
+        ]);
+
+
         $content = Storage::disk('local')->get('ipsum.txt');
         $profilelist = explode("\n\n", $content);
 

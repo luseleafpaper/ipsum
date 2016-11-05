@@ -6,12 +6,13 @@
 
 @section('content') 
     <h1>Generate some random users!</h1>
+
     <form method='POST' action='/usergen'>
 
         {{ csrf_field() }}
 
         How many users do you want? <br> 
-        <input type='number' name='number' value='3'>
+        <input type='number' name='number' value=3>
         <br> 
         Include...
         <br>
