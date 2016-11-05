@@ -20,13 +20,13 @@ class IpsumController extends Controller
 
         $paragraphs = explode("\n\n", $contents); 
         
-        $retval = array() ; 
+        $output = array() ; 
 
         for ($i=0; $i<$request['number']; $i++) { 
-            $retval[$i]= $paragraphs[$i]; 
+            $output[$i]= $paragraphs[$i]; 
         } 
 
-        $request["paragraphs"]=$retval; 
+        $request["paragraphs"]=$output; 
 
         return view('ipsum.post')->withRequest($request); 
     } 
