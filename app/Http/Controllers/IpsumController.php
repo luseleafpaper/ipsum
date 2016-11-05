@@ -16,6 +16,11 @@ class IpsumController extends Controller
 
     public function post(Request $request) 
     {   
+        // Validate the user's form items 
+        $this->validate($request, [
+            "number" => 'required|integer|between:1,40',
+        ]);
+
         $contents = Storage::disk('local')->get('ipsum.txt'); 
 
         $paragraphs = explode("\n\n", $contents); 
