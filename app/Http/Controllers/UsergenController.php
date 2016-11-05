@@ -24,8 +24,6 @@ class UsergenController extends Controller
         $content = Storage::disk('local')->get('names.txt'); 
         $namelist = explode("\n", $content);
 
-        $request["users"] = array(); 
-        
         $users = array(); 
         
         for ($i = 0; $i < $request["number"]; $i++) { 
@@ -47,18 +45,7 @@ class UsergenController extends Controller
         } 
 
         $request["users"] = $users ;
-        $_request["users"] = array(
-            array(
-                "name" => "Lu Wang", 
-                "birthday" => "1989-03-20",
-                "profile" => "Just trying her best",
-                ), 
-            array(
-                "name" => "Lin Wang",
-                "birthday" => "1993-03-20",
-                "profile" => "Just trying her best",
-                ), 
-            ); 
+
         return view('usergen.post')->withRequest($request);
     }
 

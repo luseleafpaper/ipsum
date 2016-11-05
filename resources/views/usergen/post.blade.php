@@ -9,8 +9,12 @@
 
     @foreach($request["users"] as $user)
         {{$user["name"]}}<br>
-        {{$user["birthday"]}}<br>
-        {{$user["profile"]}}<br><br>
+        @if( !empty($request["birthday"])) 
+            {{$user["birthday"]}}<br>
+        @endif 
+        @if( !empty($request["profile"])) 
+            {{$user["profile"]}}<br><br>
+        @endif 
     @endforeach 
 
 @endsection
