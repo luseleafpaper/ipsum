@@ -2,6 +2,10 @@
 
 ## Demo 
 Video [link](www.google.com) 
+
+## Live Laravel Application.
+Live site is here: [p3.luseleafpaper.com](http://p3.luseleafpaper.com/)
+
 ## Creating a new Laravel application
 Since I develop on a linux machine, creating a new Laravel project used a blend of the instructions for mac and digitalocean setup. 
 I have two controllers: 
@@ -22,8 +26,6 @@ Views include:
 * ipsum blade template which loops through an array of content received from the controller and prints out paragraphs separated by new lines 
 * usergen blade template which loops through an array of content received from the controller, checks if the birthday and profile tags are turned on, and prints the appropriate content 
 
-## Deploying a Laravel app on a live server.
-Live site is here: [p3.luseleafpaper.com](http://p3.luseleafpaper.com/)
 
 ## External Packages
 
