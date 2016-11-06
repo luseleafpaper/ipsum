@@ -15,5 +15,6 @@
 
 
     <h2><a href="/usergen">Random User Generator</a></h2>
-    <p>Create random user data for your applications. Like Lorem Ipsum, but for people.</p>
+    <blockquote>Create random user data for your applications. Like Lorem Ipsum, but for people.
+    </blockquote>
 @endsection
