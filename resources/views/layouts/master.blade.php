@@ -37,7 +37,7 @@
               <li><a href="/usergen">Generate Users</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="#">&copy;{{date('Y')}} Lu Wang</a></li>
+              <li><a href="https://github.com/luseleafpaper/ipsum">&copy;{{date('Y')}} Source Code</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div><!--/.container-fluid -->
