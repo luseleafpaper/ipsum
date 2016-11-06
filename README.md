@@ -12,6 +12,10 @@ I have two controllers:
 * UsergenController - inspects the request object and appends the appropriate number of user profiles to the view 
 * IpsumController - inspects the request object and appends the appropriate number of lorem ipsum paragraphs to the view
 
+Both Controllers implement form validation  
+https://github.com/luseleafpaper/ipsum/blob/master/app/Http/Controllers/IpsumController.php#L20  
+https://github.com/luseleafpaper/ipsum/blob/master/app/Http/Controllers/UsergenController.php#L23  
+
 ## Installing and using Composer packages
 The external package I used was a random number generator. While it may be expected that Lorem Ipsum text begins the same way, I wanted to add some variety to the user profiles. The random number generator allowed me to randomly pair first and last names and select snippets from my Lorem Ipsum text. 
 
