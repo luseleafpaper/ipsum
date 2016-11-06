@@ -1,7 +1,7 @@
 # Developer's Best Friend
 
 ## Demo 
-Video [link](https://youtu.be/l0RNqWgPygY) 
+Abridged 5min video [link](https://www.youtube.com/watch?v=AYtZ9JPvD9s). Original 6min video [link](https://youtu.be/l0RNqWgPygY). 
 
 ## Live Laravel Application
 Live site is here: [p3.luseleafpaper.com](http://p3.luseleafpaper.com/)
