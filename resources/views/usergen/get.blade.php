@@ -1,8 +1,8 @@
 @extends('layouts.master')
 
-@section('title') 
-    Index  
-@stop 
+@section('title')
+    P3 UserGen
+@stop
 
 @section('content') 
     <h1>Generate some random users!</h1>

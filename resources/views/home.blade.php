@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title') 
-    Index  
+    P3 Home  
 @stop 
 
 @section('content') 

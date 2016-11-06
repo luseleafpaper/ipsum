@@ -3,7 +3,7 @@
 <head>
     <title>
         {{-- Yield the title if it exists, otherwise default to 'Foobooks' --}}
-        @yield('title','Lorem Ipsum')
+        @yield('title','P3 Lu Wang')
     </title>
 
     <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css' rel='stylesheet'>
