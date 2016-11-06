@@ -17,6 +17,10 @@ The external package I used was a random number generator. While it may be expec
 
 I also used the Storage class that came with the default packages downloaded by composer to read and split content from text files on disk. These text files include a list of names and lorem ipsum text. 
 
+Sample usage of Storage in the UsergenController and IpsumController  
+https://github.com/luseleafpaper/ipsum/blob/master/app/Http/Controllers/UsergenController.php#L7  
+https://github.com/luseleafpaper/ipsum/blob/master/app/Http/Controllers/IpsumController.php#L24  
+ 
 ## Routing basics.
 There are three routes in this application: 
 * home / 
