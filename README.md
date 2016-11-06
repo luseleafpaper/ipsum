@@ -9,7 +9,7 @@ Live site is here: [p3.luseleafpaper.com](http://p3.luseleafpaper.com/)
 ## Creating a new Laravel application
 Since I develop on a linux machine, creating a new Laravel project used a blend of the instructions for mac and digitalocean setup. 
 I have two controllers: 
-* UsergenController - inspects the request object and appends the appropriate number of user profiles to the view 
+* UsergenController - inspects the request object and appends the appropriate number of random users to the view, as well as passing parameters to turn on birthday and profile display.  
 * IpsumController - inspects the request object and appends the appropriate number of lorem ipsum paragraphs to the view
 
 Both Controllers implement form validation  
